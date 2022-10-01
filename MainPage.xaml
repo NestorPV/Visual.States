@@ -8,8 +8,8 @@
             <Frame BorderColor="#F3F2F1"
                    BackgroundColor="#F3F2F1"
                    HasShadow="True"
-                   HeightRequest="75"
-                   WidthRequest="75"
+                   HeightRequest="80"
+                   WidthRequest="80"
                    Padding="0">
                 <VisualStateManager.VisualStateGroups>
                     <VisualStateGroupList>
@@ -68,47 +68,41 @@
     </ContentPage.Resources>
 
     <VerticalStackLayout Spacing="20" Padding="20">
-        <Label Text="Do HorizontalOptions Work?" />
+        <Label Text="Shell.Background does not work" />
+        <Label Text="RadioButtons do not work on Android with ControlTemplate" />
+        <Label Text="ControlTemplate looks different on different platforms" />
         <VerticalStackLayout Spacing="20">
-            <HorizontalStackLayout RadioButtonGroup.GroupName="animals" BackgroundColor="LightCoral">
-                <!--HorizontalOptions DO NOT Work on HorizontalStackLayout-->
-                <RadioButton Value="Start" HorizontalOptions="Start">
+            <HorizontalStackLayout RadioButtonGroup.GroupName="test" Background="{StaticResource PrimaryGradient}" Padding="10,30,10,30">
+                <RadioButton Value="Start">
                     <RadioButton.Content>
                         <VerticalStackLayout BackgroundColor="LightBlue">
-                            <!--HorizontalOptions Work on VerticalStackLayout-->
                             <Image Source="dotnet_bot.png"
                                    HeightRequest="25"
-                                   HorizontalOptions="Start"
-                                   VerticalOptions="Center" />
+                                   HorizontalOptions="Start" />
                             <Label Text="Start"
-                                   HorizontalOptions="Center"
-                                   VerticalOptions="End" />
+                                   HorizontalOptions="Start" />
                         </VerticalStackLayout>
                     </RadioButton.Content>
                 </RadioButton>
-                <RadioButton Value="Center" HorizontalOptions="Center">
+                <RadioButton Value="Center">
                     <RadioButton.Content>
                         <VerticalStackLayout BackgroundColor="LightBlue">
                             <Image Source="dotnet_bot.png"
                                    HeightRequest="25"
-                                   HorizontalOptions="Center"
-                                   VerticalOptions="Center" />
+                                   HorizontalOptions="Center" />
                             <Label Text="Center"
-                                   HorizontalOptions="Center"
-                                   VerticalOptions="End" />
+                                   HorizontalOptions="Center" />
                         </VerticalStackLayout>
                     </RadioButton.Content>
                 </RadioButton>
-                <RadioButton Value="End" HorizontalOptions="End">
+                <RadioButton Value="End">
                     <RadioButton.Content>
                         <VerticalStackLayout BackgroundColor="LightBlue">
                             <Image Source="dotnet_bot.png"
                                    HeightRequest="25"
-                                   HorizontalOptions="End"
-                                   VerticalOptions="Center" />
+                                   HorizontalOptions="End" />
                             <Label Text="End"
-                                   HorizontalOptions="Center"
-                                   VerticalOptions="End" />
+                                   HorizontalOptions="End" />
                         </VerticalStackLayout>
                     </RadioButton.Content>
                 </RadioButton>

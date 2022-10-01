@@ -6,6 +6,15 @@
     xmlns:local="clr-namespace:Visual.States"
     Shell.FlyoutBehavior="Disabled">
 
+    <Shell.Background>
+        <LinearGradientBrush EndPoint="1,0">
+            <GradientStop Color="Yellow"
+                          Offset="0.1" />
+            <GradientStop Color="Green"
+                          Offset="1.0" />
+        </LinearGradientBrush>
+    </Shell.Background>
+
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
